@@ -1,0 +1,44 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ERC20
+    network: avalanche
+    source:
+      abi: ERC20
+      address: "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664"
+      startBlock: 10145264
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Transfer
+      abis:
+        - name: ERC20
+          file: ./abis/ERC20.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/erc-20.ts
+  - kind: ethereum
+    name: ArkenDexV3
+    network: avalanche
+    source:
+      abi: ArkenDexV3
+      address: "0x1d620454f3a2b17a09aeaa851f77573883505118"
+      startBlock: 10145264
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - FeeWalletUpdated
+      abis:
+        - name: ArkenDexV3
+          file: ./abis/ArkenDexV3.json
+      eventHandlers:
+        - event: FeeWalletUpdated(address)
+          handler: handleFeeWalletUpdated
+      file: ./src/arken-dex-v-3.ts

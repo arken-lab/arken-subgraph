@@ -1,0 +1,9 @@
+{
+    "key": "polygon",
+    "network": "polygon",
+    "initial_fee_address": "0x9f1c6b37dede7584e722681c8f9d55e5cf1788f5",
+    "arkenDexAddress": "0xcbd3cBC8707643cC2Ced4B40907041F9627FFB51",
+    "stable_coin": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+    "stable_coin_decimals": 6
+}
+

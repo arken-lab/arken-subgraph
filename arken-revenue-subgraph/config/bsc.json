@@ -1,0 +1,7 @@
+{
+    "key": "bsc",
+    "network": "bsc",
+    "initial_fee_address": "0x9f1c6b37dede7584e722681c8f9d55e5cf1788f5",
+    "arkenDexAddress": "0xf6297d882e28fedf9d39f3c02f81ed9e3c4d9f4e",
+    "stable_coin": "0xe9e7cea3dedca5984780bafc599bd69add087d56"
+}

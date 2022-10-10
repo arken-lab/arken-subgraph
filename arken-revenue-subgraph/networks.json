@@ -1,0 +1,32 @@
+{
+  "bsc": {
+    "ERC20": {
+      "address": "0xe9e7cea3dedca5984780bafc599bd69add087d56",
+      "startBlock": 13941966
+    },
+    "ArkenDexV3": {
+      "address": "0xf6297d882e28fedf9d39f3c02f81ed9e3c4d9f4e",
+      "startBlock": 13941966
+    }
+  },
+  "avalanche": {
+    "ERC20": {
+      "address": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+      "startBlock": 10145264
+    },
+    "ArkenDexV3": {
+      "address": "0x1d620454f3a2b17a09aeaa851f77573883505118",
+      "startBlock": 10145264
+    }
+  },
+  "matic": {
+    "ERC20": {
+      "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "startBlock": 20593577
+    },
+    "ArkenDexV3": {
+      "address": "0xf6297d882e28fedf9d39f3c02f81ed9e3c4d9f4e",
+      "startBlock": 20593577
+    }
+  }
+}

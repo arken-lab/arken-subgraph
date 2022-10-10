@@ -1,0 +1,8 @@
+{
+    "key": "avalanche",
+    "network": "avalanche",
+    "initial_fee_address": "0x9f1c6b37dede7584e722681c8f9d55e5cf1788f5",
+    "arkenDexAddress": "0x310dcd7802875c10e128a8baf3b72d8ad6fd0a7b",
+    "stable_coin": "0xa7d7079b0fead91f3e65f86e8915cb59c1a4c664",
+    "stable_coin_decimals": 6
+}

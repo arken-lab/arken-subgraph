@@ -1,0 +1,21 @@
+type FeeWalletUpdated @entity {
+  id: ID!
+  newFeeWallet: Bytes! # address
+}
+
+type FeeWallet @entity {
+  id: ID!
+  feeWalletAddress: Bytes!
+}
+
+type Revenue @entity {
+  id: ID!
+  amountUsd: BigDecimal!
+  date: Int!
+}
+
+type DayData @entity {
+  id: ID!
+  totalAmountUsd: BigDecimal!
+  date: Int!
+}
