@@ -8,9 +8,9 @@
     "pre:bsc": "yarn mustache ./config/bsc.json ./const/index.template.ts > ./const/index.ts && tail -n +2 ./const/index.ts > ./const/index.ts.tmp && mv ./const/index.ts.tmp ./const/index.ts",
     "pre:polygon": "yarn mustache ./config/polygon.json ./const/index.template.ts > ./const/index.ts && tail -n +2 ./const/index.ts > ./const/index.ts.tmp && mv ./const/index.ts.tmp ./const/index.ts",
     "pre:avalanche": "yarn mustache ./config/avalanche.json ./const/index.template.ts > ./const/index.ts && tail -n +2 ./const/index.ts > ./const/index.ts.tmp && mv ./const/index.ts.tmp ./const/index.ts ",
-    "deploy:avalanche": "yarn pre:avalanche && graph deploy --product hosted-service boromir-arken/arken-revenue-avalanche --network avalanche",
-    "deploy:bsc": "yarn pre:bsc && graph deploy --product hosted-service boromir-arken/arken-revenue-bsc --network bsc",
-    "deploy:polygon": "yarn pre:polygon && graph deploy --product hosted-service boromir-arken/arken-revenue-polygon --network matic"
+    "deploy:avalanche": "yarn pre:avalanche && graph deploy --product hosted-service arken-lab/arken-avalanche --network avalanche",
+    "deploy:bsc": "yarn pre:bsc && graph deploy --product hosted-service arken-lab/arken-bsc --network bsc",
+    "deploy:polygon": "yarn pre:polygon && graph deploy --product hosted-service arken-lab/arken-polygon --network matic"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.34.0",
